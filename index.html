@@ -482,6 +482,16 @@ function toggleAbout() {
 </nav>
 
 <div class="container">
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-text">
+      <h1>Hi, I'm <em>Nashwa Nadilah</em> —<br>Quantitative Analyst &<br>Capital Market Enthusiast</h1>
+      <p class="subtitle">
+        Actuarial Science student interested in data analysis, reporting, and investment insights.
+        Passionate about transforming data into meaningful and structured decisions.
+      </p>
+      <div class="social-links">
+
 <!-- ABOUT ME -->
 <div class="section">
     <h2>About Me</h2>
@@ -511,16 +521,6 @@ function toggleAbout() {
         </div>
     </div>
 </div>
-
-  <!-- HERO -->
-  <div class="hero">
-    <div class="hero-text">
-      <h1>Hi, I'm <em>Nashwa Nadilah</em> —<br>Quantitative Analyst &<br>Capital Market Enthusiast</h1>
-      <p class="subtitle">
-        Actuarial Science student interested in data analysis, reporting, and investment insights.
-        Passionate about transforming data into meaningful and structured decisions.
-      </p>
-      <div class="social-links">
 
         <!-- LinkedIn -->
         <a class="social-btn" href="https://linkedin.com/in/nashwanadilah" target="_blank">
@@ -573,7 +573,7 @@ function toggleAbout() {
             <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
             <circle cx="12" cy="7" r="4"/>
           </svg>
-          <span>Tambahkan<br>foto kamu di sini</span>
+          <span>The photo will be displayed here</span>
         </div>
       </div>
     </div>
@@ -620,28 +620,22 @@ function toggleAbout() {
   </div>
 
   <!-- PROJECTS -->
-  <div class="section" id="projects">
-    <div class="section-header">
-      <h2>Projects</h2>
-      <div class="line"></div>
-    </div>
-    <div class="projects-grid">
+   <div class="card" onclick="toggleDetail('proj1')">
+    <h3>IHSG Sectoral Performance Analysis & Volatility Analysis</h3>
+    <p>Interactive dashboard analyzing Indonesian stock market performance and sector trends.</p>
+    <span class="project-link">Open Dashboard →</span>
 
-      <a class="project-card" href="https://nashwanadilah-ihsg-dashboard.streamlit.app/" target="_blank">
-        <h3>IHSG Sectoral Performance Analysis & Volatility Analysis</h3>
-        <p>Interactive dashboard analyzing Indonesian stock market performance and sector trends.</p>
-        <span class="project-link">Open Dashboard →</span>
-
-        <div id="proj1" style="display:none; margin-top:15px;">
-          <p>
+    <div id="proj1" style="display:none; margin-top:15px;">
+        <p>
             Analyzed 5 years of historical performance across key blue-chip sectors against the IHSG composite benchmark.
             The most fascinating insight was the correlation breakdown, i identified that during COVID-19 shock, inter-sector diversification potential almost vanished as sectors began moving in sync
             By constructing correlation and analyzing rolling volatility, i found that diversification is often an illusion during market stress.
             The movement of the IHSG is heavily influenced by the financial and telecommunications sectors. The financial sector correlates fairly evenly with all other sectors, indicating that the financial sector (BBCA) acts as a link between sectors in the economy. Diversifying into sectors with low correlation to BBCA (such as consumer or mining) can serve as a risk mitigation strategy.
             The best pair for diversification : Consumer & Mining sector (correlation = 0,148)
         </p>
-        </div>
-      </a>
+    </div>
+</div>
+  
 
       <a class="project-card" href="https://github.com/nashwanadilah/Customer-Churn-Prediction" target="_blank">
         <h3>Customer Churn Prediction</h3>
