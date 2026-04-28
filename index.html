@@ -457,17 +457,6 @@
 </style>
 </head>
 
-<script>
-function toggleDetail(id) {
-    const el = document.getElementById(id);
-    el.style.display = (el.style.display === "none") ? "block" : "none";
-}
-
-function toggleAbout() {
-    const el = document.getElementById("aboutDetail");
-    el.style.display = (el.style.display === "none") ? "block" : "none";
-}
-</script>
 <body>
 
 <!-- NAVBAR -->
@@ -482,6 +471,7 @@ function toggleAbout() {
 </nav>
 
 <div class="container">
+
   <!-- HERO -->
   <div class="hero">
     <div class="hero-text">
@@ -491,36 +481,6 @@ function toggleAbout() {
         Passionate about transforming data into meaningful and structured decisions.
       </p>
       <div class="social-links">
-
-<!-- ABOUT ME -->
-<div class="section">
-    <h2>About Me</h2>
-
-    <div class="card" onclick="toggleAbout()">
-        <p>
-            I'm someone who enjoys exploring data, finance, and investment.
-            more about me ↓
-        </p>
-
-        <div id="aboutDetail" style="display:none; margin-top:15px;">
-            <p>
-                <!-- ISI SENDIRI YA -->
-                I’ve always been drawn to the world of investment. Actuarial science appeals to me because
-                it combines advanced mathematics with financial theory, which is essential for evaluating 
-                the performance and risk of various investment portfolios.
-
-                Professionally, I define myself as a meticulous analyst with a growth mindset. 
-                I am a disciplined problem-solver who values precision and ethical decision-making. 
-                I thrive in environments that challenge my technical capabilities and require a high degree of accountability.
-
-                I am committed to the principle of being a lifelong learner, in a field as dynamic as finance, 
-                I believe that staying relevant requires constant adaptation and a dedication to mastering 
-                new technologies and global market trends. I don't just want to reach a destination in my career,
-                I want to continuously evolve alongside the industry.
-            </p>
-        </div>
-    </div>
-</div>
 
         <!-- LinkedIn -->
         <a class="social-btn" href="https://linkedin.com/in/nashwanadilah" target="_blank">
@@ -573,7 +533,7 @@ function toggleAbout() {
             <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
             <circle cx="12" cy="7" r="4"/>
           </svg>
-          <span>The photo will be displayed here</span>
+          <span>Tambahkan<br>foto kamu di sini</span>
         </div>
       </div>
     </div>
@@ -620,43 +580,28 @@ function toggleAbout() {
   </div>
 
   <!-- PROJECTS -->
-   <div class="card" onclick="toggleDetail('proj1')">
-    <h3>IHSG Sectoral Performance Analysis & Volatility Analysis</h3>
-    <p>Interactive dashboard analyzing Indonesian stock market performance and sector trends.</p>
-    <span class="project-link">Open Dashboard →</span>
-
-    <div id="proj1" style="display:none; margin-top:15px;">
-        <p>
-            Analyzed 5 years of historical performance across key blue-chip sectors against the IHSG composite benchmark.
-            The most fascinating insight was the correlation breakdown, i identified that during COVID-19 shock, inter-sector diversification potential almost vanished as sectors began moving in sync
-            By constructing correlation and analyzing rolling volatility, i found that diversification is often an illusion during market stress.
-            The movement of the IHSG is heavily influenced by the financial and telecommunications sectors. The financial sector correlates fairly evenly with all other sectors, indicating that the financial sector (BBCA) acts as a link between sectors in the economy. Diversifying into sectors with low correlation to BBCA (such as consumer or mining) can serve as a risk mitigation strategy.
-            The best pair for diversification : Consumer & Mining sector (correlation = 0,148)
-        </p>
+  <div class="section" id="projects">
+    <div class="section-header">
+      <h2>Projects</h2>
+      <div class="line"></div>
     </div>
-</div>
-  
+    <div class="projects-grid">
+
+      <a class="project-card" href="https://nashwanadilah-ihsg-dashboard.streamlit.app/" target="_blank">
+        <h3>IHSG Dashboard</h3>
+        <p>Interactive dashboard analyzing Indonesian stock market performance and sector trends.</p>
+        <span class="project-link">Open Dashboard →</span>
+      </a>
 
       <a class="project-card" href="https://github.com/nashwanadilah/Customer-Churn-Prediction" target="_blank">
         <h3>Customer Churn Prediction</h3>
         <p>Machine learning model to predict insurance customer churn behavior.</p>
         <span class="project-link">View on GitHub →</span>
-
-        <div id="proj2" style="display:none; margin-top:15px;">
-          <p>
-            Developed a machine learning model to predict customer churn in the insurance industry.
-            Determining the best machine learning model (decion tree, random forest, XGBoost) based on each model’s performance metrics using AUC-ROC, Accuracy, Precision, Recall, and F1 Score in predicting customer churn in the life insurance industry.
-            Key Findings : XGBOOST is the model best suited for effectively mapping patterns and churn risks in the life insurance industry
-          </p>
-        </div>
       </a>
 
       <div class="project-card">
-        <h3>Flood Risk Analysis Using Ordinal Regression Model</h3>
-        <p>
-            Built ordinal logistic regression model to asses multi-level risk categories
-            Identified significant predictor variabel in distinguishing categories of coastal flood risk levelsbased
-        </p>
+        <h3>Flood Risk Analysis</h3>
+        <p>Statistical modeling to assess environmental risk levels.</p>
         <span class="project-link" style="color:var(--muted)">In Progress</span>
       </div>
 
